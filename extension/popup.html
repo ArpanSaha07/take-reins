@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Take Reins</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="popup">
+  <header class="brand">
+    <img src="icons/icon-32.png" alt="" width="24" height="24">
+    <div>
+      <h1>Take Reins</h1>
+      <p class="tagline">Take reins of your life.</p>
+    </div>
+  </header>
+
+  <form id="add-form" autocomplete="off">
+    <label for="site-input">Block a website</label>
+    <div class="row">
+      <input id="site-input" type="text" placeholder="e.g. youtube.com" maxlength="2048" spellcheck="false" aria-describedby="form-error">
+      <button type="submit" class="primary">Block</button>
+    </div>
+    <p id="form-error" class="error" role="alert"></p>
+  </form>
+
+  <section aria-labelledby="unblocked-heading" id="unblocked-section" hidden>
+    <h2 id="unblocked-heading">Unblocked for now</h2>
+    <ul id="unblocked-list" class="list"></ul>
+  </section>
+
+  <section aria-labelledby="blocked-heading">
+    <h2 id="blocked-heading">Blocked sites</h2>
+    <p id="empty" class="muted">No sites yet. Add one above.</p>
+    <ul id="site-list" class="list"></ul>
+  </section>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

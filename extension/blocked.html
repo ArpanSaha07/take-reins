@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blocked — Take Reins</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="blocked">
+  <main>
+    <img src="icons/icon-128.png" alt="" width="72" height="72">
+    <h1 id="title">This site is blocked</h1>
+    <p id="site" class="site-name"></p>
+    <p class="muted">You chose to keep this one out of your way. Take reins of your time.</p>
+
+    <section id="unblock" aria-labelledby="unblock-heading" hidden>
+      <h2 id="unblock-heading">Need it briefly?</h2>
+      <div id="unblock-buttons" class="row center"></div>
+    </section>
+
+    <p id="continue-wrap" hidden><button type="button" id="continue" class="primary">Continue to the site</button></p>
+    <p id="error" class="error" role="alert"></p>
+  </main>
+  <script type="module" src="blocked.js"></script>
+</body>
+</html>
